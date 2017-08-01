@@ -2513,7 +2513,7 @@ var SmartApollo = function () {
 
     this.vm = vm;
     this.key = key;
-    this.options = options;
+    this.options = Object.assign({}, options);
     this._skip = false;
     this._watchers = [];
 
